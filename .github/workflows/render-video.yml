@@ -1,14 +1,11 @@
 name: Render Documentary Video
 
+# NOTE: GitHub-hosted runners (2-core) take ~3-5h for this render.
+# Recommended: use a self-hosted runner with more cores, or render locally
+# and upload the MP4 to the v1.0.0 release manually (see README).
+# To use a self-hosted runner, add `runs-on: self-hosted` to the render job.
+
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'video/src/**'
-      - 'video/data/**'
-      - 'video/public/images/**'
-      - 'video/public/*.png'
-      - '.github/workflows/render-video.yml'
   workflow_dispatch:
     inputs:
       concurrency:
