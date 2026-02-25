@@ -377,12 +377,19 @@
   <p class="lead">A cinematic adaptation of the book — narrated, data-driven, and built entirely with code.</p>
 
   <div class="video-wrapper">
-    <div class="video-placeholder">
-      <div class="play-icon"></div>
-      <p>Documentary coming soon</p>
-      <p style="font-size:0.8rem;">Full-length film &nbsp;·&nbsp; AI narration &nbsp;·&nbsp; Data visualizations</p>
-    </div>
+    <video controls preload="metadata"
+           poster="book/images/sperm_decline.png"
+           style="width:100%;display:block;">
+      <source src="https://github.com/Algiras/fertility-crisis/releases/download/v1.0.0/FertilityCrisis.mp4"
+              type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
   </div>
+  <p style="margin-top:16px;font-size:0.85rem;color:var(--muted);">
+    Can't load inline?
+    <a href="https://github.com/Algiras/fertility-crisis/releases/download/v1.0.0/FertilityCrisis.mp4"
+       style="color:var(--accent);">Download the MP4</a> (318 MB)
+  </p>
 </section>
 
 <div class="divider"></div>
