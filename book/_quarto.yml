@@ -1,0 +1,50 @@
+project:
+  type: book
+
+book:
+  title: "The Male Fertility Crisis"
+  subtitle: "Epidemiological Trends, Etiological Mechanisms, and the Silent Trauma"
+  author: "Algimantas K."
+  date: "2026"
+  chapters:
+    - index.qmd
+    - 00-executive-summary.qmd
+    - part: "Part I: The Problem and Its Implications"
+      chapters:
+        - 01-epidemiology.qmd
+        - 02-critiques.qmd
+        - 06-psychology-trauma.qmd
+        - 07-socio-economic-demographics.qmd
+    - part: "Part II: Understanding the Causes"
+      chapters:
+        - 03-toxicology.qmd
+        - 04-lifestyle.qmd
+    - part: "Part III: Actionable Solutions and the Future"
+      chapters:
+        - 05-diagnostics.qmd
+        - 08-what-the-world-is-doing.qmd
+        - 09-what-you-can-do.qmd
+        - 10-epilogue.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  pdf:
+    documentclass: scrreprt
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - top=30mm
+      - bottom=30mm
+      - left=25mm
+      - right=25mm
+    linestretch: 1.5
+    mainfont: Arial
+    fontsize: 11pt
+  html:
+    theme: cosmo
+  epub:
+    cover-image: cover.png

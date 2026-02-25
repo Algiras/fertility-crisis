@@ -1,0 +1,33 @@
+# Node
+video/node_modules/
+video/.cache/
+video/.remotion/
+
+# Build outputs (large files)
+video/out/
+
+# Quarto cache
+book/.quarto/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Bazel/VSCode artifacts
+.bazel-vscode/
+
+# Generated audio — large binary, exclude from repo
+# (keep chart narrations and bookend narrations as they're small and important)
+video/public/audio/chunks/
+video/public/audio/bgm.wav
+
+# Logs
+*.log
+nohup.out
