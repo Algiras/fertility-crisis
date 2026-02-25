@@ -42,7 +42,7 @@ format:
       - left=25mm
       - right=25mm
     linestretch: 1.5
-    mainfont: Arial
+    mainfont: Liberation Sans
     fontsize: 11pt
   html:
     theme: cosmo
