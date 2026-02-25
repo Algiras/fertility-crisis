@@ -31,7 +31,7 @@ jobs:
           tinytex: true
 
       - name: Install system fonts (Liberation Sans = Arial-compatible)
-        run: sudo apt-get install -y fonts-liberation fonts-open-sans ttf-ubuntu-font-family
+        run: sudo apt-get install -y fonts-liberation fonts-open-sans ubuntu-font-family-console 2>/dev/null || sudo apt-get install -y fonts-liberation fonts-open-sans
 
       - name: Build Quarto book
         working-directory: book
